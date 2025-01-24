@@ -1,0 +1,23 @@
+div{
+   width: 250px;
+   height: 250px;
+   background-color: blue;
+}
+
+p{
+   font-size: x-large;
+}
+
+@media (max-width:600px){
+   div{
+      background-color: red;
+      height: 10px;
+   }
+
+   p{
+      font-size: medium;
+   }
+   img{
+      display: none;
+   }
+}
