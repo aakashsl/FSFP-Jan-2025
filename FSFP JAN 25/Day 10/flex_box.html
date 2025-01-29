@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flex Box</title>
+
+   <style>
+      .con{
+         border: 10px solid black;
+         display: flex;
+         flex-direction: row;
+         gap: 10px;
+
+         /* justify-content: center;
+         height: 500px;
+         align-items: center; */
+      }
+      .red{
+         background-color: red;
+         /* flex-basis: 100px; */
+         /* order: 1; */
+         flex: 3;
+         
+      }
+      .yellow{
+         background-color: yellow;
+         flex: 1;
+      }
+      .green{
+         background-color: green;
+         /* order: 15; */
+         flex: 5;
+      }
+      .blue{
+         background-color: blue;
+         /* order: 5; */
+         flex: 6;
+      }
+      .orange{
+         background-color: orange;
+         /* flex-basis: 200px; */
+
+         float: 2;
+      }
+      .demo{
+         background-color: pink;
+         width: 300px;
+      }
+      .demo2{
+         background-color: pink;
+         width: 500px;
+      }
+   </style>
+</head>
+<body>
+   <div class="con">
+      <div class="red">This is red</div>
+      <div class="yellow">Lorem ipsum dolor sit amet consectetur.</div>
+      <div class="green">Green</div>
+      <div class="blue">Blue</div>
+      <div class="orange">Lorem ipsum dolor sit amet.</div>
+   </div>
+   <div class="demo"><h1>Demo 300px</h1></div>
+   <div class="demo2"><h1>Demo 500px</h1></div>
+</body>
+</html>
