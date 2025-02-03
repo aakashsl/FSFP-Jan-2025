@@ -1,0 +1,52 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   background-color: rgb(230, 228, 224);
+}
+
+.navBar{
+   background-color: rgb(0,0,0, 0.8);
+   width: 100%;
+   top:0;
+   left: 0;
+   display: flex;
+   justify-content: space-between;
+   padding: 15px 50px;
+   align-items: center;
+}
+
+.navBar h1{
+   color: #ffcc00;
+   font-size: 1.5em;
+}
+
+.navBar ul{
+   display: flex;
+   list-style: none;
+}
+
+.navBar ul li{
+   margin: 0 15px;
+}
+
+.navBar ul li a{
+   color: white;
+   font-size: 1.1em;
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+.navBar ul li a:hover{
+   color: #ffcc00;
+}
+
+.btn{
+   margin: 10px;
+   padding: 5px;
+   background-color: green;
+   color: white;
+   border-radius: 5px;
+}
