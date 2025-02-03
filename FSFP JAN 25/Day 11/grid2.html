@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Grid</title>
+   <style>
+      .con{
+         display: grid;
+         grid-template-columns: 1fr 2fr;
+         grid-template-rows: 1fr 2fr;
+         gap: 10px;
+      }
+      .p1{
+         grid-column-start: 1;
+         grid-column-end:-1 ;
+         background-color: green;
+      }
+      .p2{
+         grid-column-start: 2;
+         background-color: blue;
+      }
+      .p3{
+         grid-row-start: 2;
+         grid-row-end: 4;
+         background-color: red;
+      }
+      .p4{
+         background-color: yellow;
+      }
+      .flex{
+         display: flex;
+         gap: 10px;
+      }
+   </style>
+</head>
+<body>
+   <div class="con">
+      <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, laudantium qui aliquam, molestiae cumque veniam non quia quis illo natus quam architecto at ea deserunt tempore fugit error, accusamus maxime?</p>
+      <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, hic!</p>
+      <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laboriosam minus quos ipsum ducimus magni voluptatibus nostrum vero nesciunt tempora?</p>
+      <!-- <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus.</p> -->
+       <div class="flex">
+         <p class="p1">Flex Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, laudantium qui aliquam, molestiae cumque veniam non quia quis illo natus quam architecto at ea deserunt tempore fugit error, accusamus maxime?</p>
+         <p class="p2">Flex Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, hic!</p>
+         <p class="p3">Flex Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laboriosam minus quos ipsum ducimus magni voluptatibus nostrum vero nesciunt tempora?</p>
+   
+       </div>
+   </div>
+</body>
+</html>
