@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow & Shrink Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 600px;
+            height: 100px;
+            border: 2px solid black;
+        }
+
+        .box {
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+
+        .grow {
+            flex-grow: 2; /* This box will grow twice as much as others */
+            background-color: blue;
+        }
+
+        .shrink {
+            flex-shrink: 2; /* This box will shrink twice as much */
+            background-color: red;
+            width: 200px; /* Initial width */
+        }
+
+        .normal {
+            flex-grow: 1;
+            flex-shrink: 1;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box grow">Grow</div>
+        <div class="box shrink">Shrink</div>
+        <div class="box normal">Normal</div>
+    </div>
+</body>
+</html>
