@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   
+   <h1 id="demo"></h1>
+   <h2 id="colors">Demo Color</h2>
+   <button onclick="text()">Click Me</button>
+   <button onclick="alt()">Alert</button>
+
+   <button onclick="colors()">color</button>
+
+   <script src="/main.js"></script>
+
+
+   <script>
+      var text1 = prompt("Enter a Text")
+      function text(){
+         document.getElementById("demo").innerHTML = text1;
+      }
+
+      function alt(){
+         alert("Hello World");
+      }
+
+      function colors() {
+         document.getElementById("colors").style.color="green"
+         document.getElementById("colors").style.fontSize="50px"
+         document.getElementById("colors").style.display="block"
+
+      }
+      
+   </script>
+</body>
+</html>
